@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fbfaf7" />
+  <title>Changhyun & Soomin | Coming Soon</title>
+  <style>
+    :root{
+      --ivory:#fbfaf7;
+      --gold:#ae8a22;
+      --blue:#7fa8e6;
+      --ink:#171717;
+      --muted:#6f6f6f;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--ivory);color:var(--ink)}
+    body{
+      font-family: "Times New Roman", "Noto Serif KR", "Apple SD Gothic Neo", serif;
+      display:flex;
+      justify-content:center;
+    }
+
+    .page{
+      position:relative;
+      width:min(100%, 480px);
+      min-height:100svh;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:48px 28px 54px;
+      isolation:isolate;
+    }
+
+    /* .flower{
+      position:absolute;
+      width:210px;
+      height:210px;
+      opacity:.9;
+      z-index:-1;
+      pointer-events:none;
+    }
+    .flower::before,
+    .flower::after{
+      content:"";
+      position:absolute;
+      inset:16%;
+      border:2px solid var(--blue);
+      border-radius:50% 46% 54% 42%;
+      transform:rotate(18deg);
+      opacity:.72;
+    }
+    .flower::after{
+      inset:31% 10% 10% 29%;
+      transform:rotate(-26deg);
+      border-radius:55% 44% 49% 60%;
+      opacity:.48;
+    }
+
+    .flower.tl{top:-72px;left:-82px;transform:rotate(-15deg)}
+    .flower.br{right:-78px;bottom:-68px;transform:rotate(165deg)} */
+
+    .card{
+      width:100%;
+      text-align:center;
+      padding:18px 8px;
+    }
+
+    /* .brand{
+      color:var(--gold);
+      letter-spacing:.08em;
+      font-size:14px;
+      margin-bottom:28px;
+    }
+    .brand-mark{
+      width:22px;
+      height:22px;
+      margin:0 auto 8px;
+      position:relative;
+    }
+    .brand-mark::before,
+    .brand-mark::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      width:1px;
+      background:var(--gold);
+      transform:translateX(-50%);
+    }
+    .brand-mark::before{top:0;height:22px}
+    .brand-mark::after{top:9px;height:12px;transform:translateX(-50%) rotate(90deg); transform-origin:center} */
+    /* .leaf{
+      position:absolute;
+      width:8px;
+      height:1px;
+      background:var(--gold);
+      left:50%;
+      transform-origin:left center;
+    }
+    .leaf.l1{top:5px;transform:translateX(-1px) rotate(150deg)}
+    .leaf.l2{top:9px;transform:translateX(-1px) rotate(30deg)}
+    .leaf.l3{top:13px;transform:translateX(-1px) rotate(150deg)}
+    .leaf.l4{top:17px;transform:translateX(-1px) rotate(30deg)} */
+
+    .eyebrow{
+      font-size:16px;
+      letter-spacing:.16em;
+      margin:0 0 34px;
+    }
+
+    .names{
+      color:var(--gold);
+      font-family:"Snell Roundhand","Apple Chancery","Segoe Script",cursive;
+      font-size:clamp(40px, 12vw, 58px);
+      line-height:1.04;
+      margin:0;
+      font-weight:400;
+    }
+    .amp{
+      display:block;
+      font-family:Georgia,serif;
+      color:var(--gold);
+      font-size:32px;
+      margin:8px 0 6px;
+    }
+
+    .kr-names{
+      margin-top:18px;
+      font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+      letter-spacing:.22em;
+      color:#4f78b8;
+      font-size:19px;
+      font-weight:500;
+    }
+
+    .divider{
+      width:38px;
+      height:1px;
+      background:#cfc6b4;
+      margin:34px auto 28px;
+    }
+
+    .coming{
+      letter-spacing:.16em;
+      font-size:14px;
+      margin-bottom:14px;
+      font-weight:600;
+    }
+
+    .copy{
+      margin:0 auto;
+      max-width:310px;
+      font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+      color:#555;
+      font-size:14px;
+      line-height:1.85;
+      word-break:keep-all;
+    }
+
+    .date{
+      margin-top:34px;
+      letter-spacing:.08em;
+      font-size:14px;
+    }
+    .venue{
+      margin-top:14px;
+      font-size:13px;
+      line-height:1.65;
+      letter-spacing:.05em;
+    }
+
+    .note{
+      margin-top:42px;
+      color:#969696;
+      font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+      font-size:11px;
+      letter-spacing:.02em;
+    }
+
+    @media (max-width:360px){
+      .page{padding-left:22px;padding-right:22px}
+      .kr-names{font-size:18px}
+      .copy{font-size:13px}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="flower tl" aria-hidden="true"></div>
+    <div class="flower br" aria-hidden="true"></div>
+
+    <section class="card" aria-label="모바일 청첩장 준비중 안내">
+
+      <p class="eyebrow">THE MARRIAGE OF</p>
+
+      <h1 class="names">
+        Changhyun Lee
+        <span class="amp">&amp;</span>
+        Soomin Lee
+      </h1>
+
+      <div class="kr-names">이창현 · 이수민</div>
+
+      <div class="divider"></div>
+
+      <div class="coming">OUR INVITATION IS COMING SOON</div>
+      <p class="copy">
+        저희의 소중한 날을 준비하고 있습니다.<br />
+        곧 이곳에서 정식으로 인사드리겠습니다.
+      </p>
+
+      <div class="date">2026. 11. 22 SUN · 12:00 PM</div>
+      <div class="venue">
+        FOUR SEASONS HOTEL SEOUL<br />
+        GRAND BALLROOM · 3F
+      </div>
+
+      <div class="note">모바일 청첩장은 곧 공개됩니다.</div>
+    </section>
+  </main>
+</body>
+</html>
